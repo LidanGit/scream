@@ -12,11 +12,11 @@ class Footer extends Component{
 		return (
 			<div id={css.footer}>
 				<ul>
-				  <li><NavLink to="/pages">首页</NavLink></li>
-				  <li><NavLink to="/category">分类</NavLink></li>
-				  <li><NavLink to="/list">购物车</NavLink></li>
-				  <li><NavLink to="/message">消息</NavLink></li>
-				  <li><NavLink to="/user">我的</NavLink></li>
+				<li><NavLink to="/pages"><img src="/home.png" alt=""/><span>首页</span></NavLink></li>
+				<li><NavLink to="/category"><img src="/category.png" alt=""/><span>分类</span></NavLink></li>
+				<li><NavLink to="/cart"><img src="/buy.png" alt=""/><span>购物车</span></NavLink></li>
+				<li><NavLink to="/message"><img src="/message.png" alt=""/><span>消息</span></NavLink></li>
+				<li><NavLink to="/user"><img src="/me.png" alt=""/><span>我的</span></NavLink></li>
 				</ul>
 			</div>
 			)

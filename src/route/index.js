@@ -4,6 +4,7 @@ import {Provider} from 'react-redux'
 import store from '../store/index.js'
 import App from '../App.js'
 import Index from '../components/index/index.js'
+import Page from '../components/pages/page.js'
 import Category from '../components/category/category.js'
 import Message from '../components/message/message.js'
 import User from '../components/user/user.js'
@@ -14,7 +15,12 @@ var router = (
 			<App>
 				<Switch>
 					<Route path="/pages" render={()=>
-						<Index></Index>
+						<Page>
+							<Switch>
+								<Route path="/pages/index" component={Index}></Route>
+								<Redirect from="/pages" to="/pages/index"></Redirect>
+							</Switch>
+						</Page>
 					}></Route>
 					<Route path="/category" render={()=>
 						<Category></Category>
