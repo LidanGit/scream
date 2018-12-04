@@ -1,0 +1,11 @@
+html,body{margin:0px;padding:0px}
+
+
+.header{width:100%;display:flex;justify-content:space-around}
+.header img{width:50%}
+.columnList{widhth:100%;}
+.commentRoot{widhth:100%;display:flex;flex:1;flex-direction:column}
+
+.clearfix{width:100%;display:flex;flex:1;flex-direction:row}
+.clearfix img{width:7%;height:7%}
+.messageInforRihgtTop{display:flex;flex:1;flex-direction:row;justify-content:space-between;border-bottom:1px solid #ccc}

@@ -8,6 +8,7 @@ import Category from '../components/category/category.js'
 import Message from '../components/message/message.js'
 import User from '../components/user/user.js'
 import Cart from '../components/cart/cart.js'
+import Message_list from'../components/message_list/message_list.js'
 var router = (
 	<Provider store={store}>
 		<Router>
