@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import axios from 'axios'
 import {connect} from 'react-redux'
-class Inner extends Component{
+class Inner4 extends Component{
 	constructor(props){
 		super(props);
 		this.state = {
@@ -21,25 +21,26 @@ class Inner extends Component{
 	}
 	componentDidMount(){
 		if(this.props.datalist.length===0){
-			this.props.handleaxios();
+				this.props.handleaxios();
 			
 		}
 	}
 }
 export default connect((state)=>{
+	console.log(state)
 	return {
-		datalist:state.datainner,
+		datalist:state.datainner4
 	}
 },{
 	handleaxios(){
 		return (dispatch)=>{
-			axios.get(`/v2/page?pageId=1&tabId=1&currentPage=1&pageSize=10&_=${new Date().getTime()}`).then(res=>{
+			axios.get(`/v2/page?pageId=1&tabId=10010&currentPage=1&pageSize=10&_=${new Date().getTime()}`).then(res=>{
 				console.log(res.data);
 				dispatch({
-					type:'handleaxios',
+					type:'handleaxios4',
 					payload:res.data.data.modules
 				})
 			})
 		}
 	}
-})(Inner);
+})(Inner4);
