@@ -9,6 +9,9 @@ import Category from '../components/category/category.js'
 import Message from '../components/message/message.js'
 import User from '../components/user/user.js'
 import Cart from '../components/cart/cart.js'
+import Topic from '../components/detail/top.js'
+import Item from '../components/detail/item.js'
+import Progroup from '../components/productgroup/productgroup.js'
 var router = (
 	<Provider store={store}>
 		<Router>
@@ -18,6 +21,7 @@ var router = (
 						<Page>
 							<Switch>
 								<Route path="/pages/index" component={Index}></Route>
+								<Route path="/pages/productGroups/:groupid" component={Progroup}></Route>
 								<Redirect from="/pages" to="/pages/index"></Redirect>
 							</Switch>
 						</Page>
@@ -34,6 +38,8 @@ var router = (
 					<Route path="/user" render={()=>
 						<User></User>
 					}></Route>
+					<Route path="/topic/:topid" component={Topic}></Route>
+					<Route path="/item/:itemid" component={Item}></Route>
 					<Redirect from="/" to="/pages" ></Redirect>
 				</Switch>
 			</App>

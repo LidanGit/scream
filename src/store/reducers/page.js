@@ -6,6 +6,5 @@ var pageReducer = ((prevState=[],action={})=>{
 		default :
 			return prevState;
 	}
-	return prevState;
 }) 
 export default pageReducer

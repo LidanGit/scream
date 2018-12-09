@@ -1,9 +1,12 @@
-#inner{
-	background:#f5f5f5;
+#inner2{
 	.main{
 		.divs{margin-top:0.15rem;background:white;padding:0.21rem 0.15rem 0.15rem 0.16rem;}
 		.p1{width:100%;font-size:0.22rem;font-weight:bold;height:0.4rem;line-height:0.4rem;text-align:center;}
 		.p2{width:100%;font-size:0.12rem;color:#898989;height:0.38rem;line-height:0.38rem;text-align:center;margin-bottom:0.14rem;}
+		.fenlei{
+			display:flex;justify-content:space-between;width:100%;
+			img{width:1.05rem;height:1.22rem;}
+		}
 		.ul1{
 			.li{float:left;width:1rem;margin-right:0.14rem;
 				img{width:0.56rem;height:0.56rem;position:relative;left:50%;transform:translateX(-50%);}

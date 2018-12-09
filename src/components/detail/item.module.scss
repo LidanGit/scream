@@ -1,0 +1,68 @@
+#item{
+	background:#f5f5f5;
+	.header{
+		padding:0 10px;display:flex;justify-content:space-between;height:0.44rem;background:white;
+		img{width:0.26rem;height:0.26rem;margin:0.03rem 0;position:relative;top:50%;transform:translateY(-50%);}
+		div{line-height:0.44rem;font-size:0.16rem;font-weight:bold;}
+	}
+	.div1{
+		padding-bottom:0.14rem;background:white;
+		.p1{
+			width:100%;height:0.34rem;line-height:0.34rem;text-indent:0.26rem;font-size:0.16rem;margin-top:0.26rem;
+		}
+		.p2{
+			width:100%;height:0.34rem;line-height:0.34rem;text-indent:0.26rem;font-weight:600;font-size:0.18rem;
+		}
+	}
+	.div2{
+		margin-top:0.15rem;background:white;padding:0 0.26rem 0.19rem 0.26rem;
+		.p3{height:0.5rem;line-height:0.5rem;font-size:0.16rem;font-weight:600;}
+		.ul1{
+			li{border-top:1px solid #ececec;height:0.32rem;line-height:0.32rem;font-size:0.14rem;
+				span:nth-of-type(1){
+					width:0.98rem;display:inline-block;
+				}
+				span:nth-of-type(2){
+					width:2rem;display:inline-block;
+				}
+			}
+			
+		}
+	}
+	.tou{padding:0.15rem 0;
+			p{text-align:center;line-height:0.24rem;}
+		}
+	.div3{
+		.body{
+			li{float:left;width:50%;border-right:1px solid #f5f5f5;border-top:1px solid #f5f5f5;background:white;box-sizing:border-box;padding-bottom:0.28rem;
+				img{width:100%;height:1.86rem;}
+				.div4{padding-left:0.16rem;padding-right:0.10rem;
+					.p2{width:100%;height:0.2rem;line-height:0.2rem;font-size:0.12rem;margin-top:0.25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+					.p3{width:100%;height:0.2rem;line-height:0.2rem;font-size:0.12rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+				}
+			}
+		}
+	}
+	.div6{
+		.info{
+			padding:0 0.2rem;
+			.fuwu{
+				.imgs{background:url(/servicepromise_bg.png) no-repeat;background-size:3.75rem 1.42rem;
+				.icons{
+					width:50%;float:left;box-sizing:border-box;padding:0.24rem 0;border-right:1px dashed #ececec;
+					img{width:0.44rem;height:0.44rem;margin-bottom:0.1rem;position:relative;left:50%;transform:translateX(-50%);}
+					p{text-align:center;color:white;font-size:0.12rem;line-height:0.2rem;}
+				}
+				}
+			}
+			.jiage{
+				.ps{
+					padding:0 0.25rem 0.20rem 0.25rem;
+					p{margin-bottom:0.1rem;font-size:0.14rem;line-height:0.20rem;}
+						
+				}
+			}
+		}
+
+	}
+}
