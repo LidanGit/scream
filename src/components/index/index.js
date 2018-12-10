@@ -34,7 +34,6 @@ class Index extends Component{
 	}
 	componentDidMount(){
 		axios.get(`/v2/page?pageId=1&tabId=1&currentPage=1&pageSize=10&_=${new Date().getTime()}`).then(res=>{
-			console.log(res.data.data.modules);
 			this.setState({
 				listdata:res.data.data.modules
 			})

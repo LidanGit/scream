@@ -8,16 +8,21 @@ import Category from '../components/category/category.js'
 import Message from '../components/message/message.js'
 import User from '../components/user/user.js'
 import Cart from '../components/cart/cart.js'
+import Outer from '../components/outer/outer.js'
 var router = (
 	<Provider store={store}>
 		<Router>
 			<App>
 				<Switch>
 					<Route path="/pages" render={()=>
-						<Index></Index>
+						<Index>
+							
+						</Index>
 					}></Route>
 					<Route path="/category" render={()=>
-						<Category></Category>
+						<Category>
+							<Route path="/category/inner" component={Outer}></Route>
+						</Category>
 					}></Route>
 					<Route path="/cart" render={()=>
 						<Cart></Cart>
