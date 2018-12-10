@@ -9,10 +9,8 @@ import Category from '../components/category/category.js'
 import Message from '../components/message/message.js'
 import User from '../components/user/user.js'
 import Cart from '../components/cart/cart.js'
-import Topic from '../components/detail/top.js'
-import Item from '../components/detail/item.js'
-import Progroup from '../components/productgroup/productgroup.js'
-var router = (
+import Message_list from'../components/message_list/message_list.js'
+import Topic from '../components/detail/top.js'import Item from '../components/detail/item.js'import Progroup from '../components/productgroup/productgroup.js'var router = (
 	<Provider store={store}>
 		<Router>
 			<App>
